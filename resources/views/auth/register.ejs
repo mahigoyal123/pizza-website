@@ -1,0 +1,31 @@
+<section class="login hero">
+
+    <form method="POST" action="/register" class="formclass">
+        <% if(messages.error) { %>
+        <span class="text-red font-red text-sm"><%= messages.error %></span>
+        <% } %>
+        <div class="box">
+        <h1>Register</h1>
+        <input type="text"  name="name" placeholder="Your Full Name" value="<%= messages.name %>" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+
+        <input type="email" name="email"  value="<%= messages.email %>" placeholder="Your Email-id" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+          
+        <input type="password" name="password"  value="<%= messages.password %>" placeholder="Your Password" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+          
+        <!-- <a href="#"><div class="btn">Sign In</div></a>  -->
+        <div class="signup">
+            <button id="btn2" type="submit">
+              Sign up
+            </button>
+            <!-- <a href="#"><div id="btn2">Sign Up</div></a> -->
+        </div>
+         <!-- End Btn2 -->
+          
+        </div> <!-- End Box -->
+          
+        </form>
+        
+        <!-- <p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p> -->
+          
+
+</section>

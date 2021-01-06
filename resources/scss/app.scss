@@ -1,0 +1,406 @@
+@import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes//mint.scss';
+
+body{
+    font-family: 'lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+
+}
+
+.logo1{
+    width:200px;
+    height: 87px;
+    border-radius: 29px;
+    filter: contrast(1.5);
+    margin-top: 0px;
+    padding-top: 0px;
+    max-width: 50%;
+}
+.logo1 img{
+    max-width: 50%;
+}
+
+nav li:last-child a{
+    background: $primary;
+    color: $pure;
+    &:hover{
+        background: $primary-hover;
+       color: $pure;
+    }
+}
+
+nav li a{
+    transition: $smooth;
+    &:hover{
+        color: $primary;
+    }
+}
+section.hero{
+    background:  $secondary;
+     padding-bottom: 4rem;
+}
+.size{
+    background: $secondary;
+}
+.add-to-cart{
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+
+    &:hover{
+     background: $primary;
+     border-color: $pure;
+     color: $pure;
+    }
+    &:focus{
+      outline: none;
+    }
+}
+.btn-primary{
+    background: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary-hover;
+
+    }
+}
+
+section.cart{
+    background: $secondary;
+    .amount{
+        color: $primary;
+    }
+}
+section.login{
+    background: $secondary;
+    min-height: 85vh;
+    a{
+        color: $primary;
+    }
+}
+
+// css
+body{
+    font-family: 'Open Sans', sans-serif;
+    // background:#3498db;
+    margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 20px 0px 20px 0px;   
+  }
+  
+  p{
+    font-size:12px;
+    text-decoration: none;
+    color:#ffffff;
+  }
+  
+  h1{
+    font-size:1.5em;
+    color:#525252;
+  }
+  
+  .box{
+    background:white;
+    width:300px;
+    border-radius:6px;
+    margin: 0 auto 0 auto;
+    padding:0px 0px 70px 0px;
+    border: $pure 4px solid; 
+  }
+  
+  .email{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width:250px;
+    color:#AAAAAA;
+    margin-top:10px;
+    font-size:1em;
+    border-radius:4px;
+  }
+  
+  .password{
+    border-radius:4px;
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    padding: 8px;
+    width:250px;
+    font-size:1em;
+  }
+  
+  .btn{
+    background: $primary;
+    width:125px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border-radius:4px;
+    border: $primary 1px solid;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    float:left;
+    margin-left:16px;
+    font-weight:800;
+    font-size:0.8em;
+  }
+  
+  .btn:hover{
+    background: $primary-hover ;
+    outline: none;
+  }
+  
+  #btn2{
+    float:left;
+    background: $primary;
+    width:125px;  padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border-radius:4px;
+    border: $primary 1px solid;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:10px;
+    font-weight:800;
+    font-size:0.8em;
+  }
+  
+  #btn2:hover{ 
+  background: $primary-hover; 
+  }
+  .login{
+      background: $gray;
+      height: 90vh;
+  }
+  .formclass{
+    padding-top: 5rem;
+}
+.signup{
+margin-left: 4.5rem;
+}
+
+.noty_theme__mint.noty_type__success {
+  background-color:hsl(115, 97%, 27%);
+  border-bottom: 1px solid hsl(115, 97%, 27%);
+  color: rgb(255, 255, 255);
+  border-radius: 40px;
+}
+.noty_theme__mint.noty_type__error {
+  background-color: #f80a22;
+  border-bottom: 1px solid #f80a22;
+  color: #fff;
+  border-radius: 40px;
+}
+.text-sm {
+  font-size: .875rem;
+  color: red;
+}
+.text-sm {
+  font-size: 0.875rem;
+  color: red;
+  // width: 373px;
+  height: 30px;
+  border-radius: 6px;
+  // margin-left: 32px;
+}
+a.link{
+  color: $primary;
+}
+.text-lg {
+  font-size: 1rem;
+}
+.amrittbody.amritclass p{
+  color: black;
+}
+section.amrittbody p{
+  color: black;
+}
+p {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+//dots
+.status-box ul{
+  margin-left: 85px;
+}
+.status-box ul li span{
+  position: relative;
+  padding-left: 20px;
+}
+.status-box ul li span::after{
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  background: $dark;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 1px 10px $secondary;
+}
+
+//before
+.status-box ul li span::before{
+  
+  font-family: "Line Awesome Free";
+  font-size: 50px;
+  font-weight: 600;
+  position: absolute;
+  left: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+}
+
+.status-box ul li:nth-child(1) span::before{
+  content: '\f46c';
+}
+.status-box ul li:nth-child(2) span::before{
+  content: '\f058';
+}
+.status-box ul li:nth-child(3) span::before{
+  content: '\f2e7';
+}
+.status-box ul li:nth-child(4) span::before{
+  content: '\f48b';
+}
+.status-box ul li:nth-child(5) span::before{
+  content: '\f118';
+}
+//line 
+.status-box ul li{
+  position: relative;
+}
+.status-box ul li::before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -6px;
+ width: 2px;
+ height: 100%;
+ background: $dark;
+ margin-top: 10px;
+}
+// Last dot
+ .status-box ul li:nth-child(5) span::after{
+   box-shadow: 0 20px 1px 20px $secondary;
+ }
+//line
+ .status-box ul li.step-completed::before{
+   background: $gray;
+ }
+ //dots
+ .status-box ul li.step-completed span::after{
+   background: $gray;
+ }
+ //text
+ .status-box ul li.step-completed span{
+   color: $gray;
+ }
+
+ //Current status
+ .status-box ul li.current span{
+   color: $primary;
+ }
+//dots
+.status-box ul li.current span::after{
+  background: $primary;
+}
+.status-box ul li small{
+  float: right;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.btn-primary:hover {
+  outline: none;
+}
+.homecard{
+  border: 1px solid white;
+  box-shadow: 0.8px 0.8px 6px 0.8px rgb(192, 190, 190);
+}
+
+.mt-6 {
+  padding-bottom: 10px;
+}
+
+@media(max-width: 1100px){
+   .container{
+     max-width: 90%;
+   }
+   table{
+     display: block;
+     overflow-x: auto;
+     white-space: nowrap;
+   }
+   .homeclass{
+     height: 72px;
+   }
+   
+}
+@media(max-width: 768px){
+
+  .status-box ul li span{
+    font-size: 14px;
+  }
+  .status-box ul li span::before{
+    font-size: 34px;
+  }
+  .btn-primary {
+    font-size: 11px;
+}
+.logo1{
+  height: 67px;
+}
+.logo1 img {
+  max-width: 52%;
+}
+.text-blue-900 {
+  font-size: 9px;
+}
+.status-box ul li small {
+  font-size: 11px;
+}
+.mb-2 {
+  font-size: 21px;
+}
+.text-lg {
+  font-size: 0.8rem;
+}
+
+}
+
+//card css
+.StripeElement {
+  box-sizing: border-box;
+  width: 50%;
+  height: 40px;
+   margin-left: auto;
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}

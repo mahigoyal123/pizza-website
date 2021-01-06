@@ -1,0 +1,28 @@
+<section class="login hero">
+
+    <form method="POST" action="/login" class="formclass">
+        <% if(messages.error) { %>
+            <span class="text-red font-red text-sm"><%= messages.error %></span>
+            <% } %>
+        <div class="box">
+        <h1>Login</h1>
+        
+        <input type="email" name="email" placeholder="Your UserId" onblur="field_blur(this, 'email');" class="email" />
+          
+        <input type="password" name="password" placeholder="Your Password" onblur="field_blur(this, 'email');" class="email" />
+          
+        <!-- <a href="#"><div class="btn">Sign In</div></a> End Btn -->
+        <button class="btn " type="submit">
+            Sign In
+        </button>
+        
+        <a href="/register"><div id="btn2">Sign Up</div></a> <!-- End Btn2 -->
+          
+        </div> <!-- End Box -->
+          
+        </form>
+        
+        <!-- <p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p> -->
+          
+
+</section>
